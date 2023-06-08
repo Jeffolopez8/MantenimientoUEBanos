@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              Title="Principal"
+              IconImageSource="hogar.png"
+             x:Class="MantenimientoUEBanos.MenuPrincipal">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid >
+
+                <Image Source="fondo2.jpg" Aspect="Fill"></Image>
+
+                <!-- <BoxView BackgroundColor="White" Opacity="0.6"></BoxView>-->
+
+                <Grid>
+
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+
+                    <Image Grid.Row="0" Source="logo1.png" WidthRequest="100" HeightRequest="100" Margin="0,10,0,10"></Image>
+                    <Label x:Name="lbl_UsuarioConectado" Text="" FontAttributes="Bold"></Label>
+                    <Label x:Name="lbl_Hora" Text="" FontAttributes="Bold"></Label>
+                    
+                    
+                    <StackLayout Grid.Row="1" Padding="10,20">
+                        <!--<Image Grid.Row="0" Source="perroyamo.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>-->
+                        <Button x:Name="btnUsuarios" IsVisible="false" Text="Usuarios" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnUsuarios_Clicked" ></Button>
+
+                        <Button x:Name="btnPerfil" Text="Mi Perfil" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnPerfil_Clicked" ></Button>
+
+                        <!--<Image Grid.Row="0" Source="perfilusuario1.jpg" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>-->
+                        <Button x:Name="btnEquipos" Text="Mis Equipos" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnEquipos_Clicked" ></Button>
+    
+
+                    </StackLayout>
+
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
