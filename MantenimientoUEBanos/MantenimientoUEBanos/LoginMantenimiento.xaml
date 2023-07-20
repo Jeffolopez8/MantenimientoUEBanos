@@ -8,7 +8,7 @@
 
         <Grid >
 
-            <Image Source="fondo3.jpg" Aspect="Fill"></Image>
+            <Image Source="fondo11.jpg" Aspect="Fill"></Image>
             <BoxView BackgroundColor="CadetBlue" Opacity="0.6"></BoxView>
 
             <Grid>
@@ -18,7 +18,7 @@
                     <RowDefinition Height="Auto"></RowDefinition>
 
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="logo1.png" WidthRequest="200" HeightRequest="200" Margin="0,30,0,20"></Image>
+                <Image Grid.Row="0" Source="LOGO.png" WidthRequest="200" HeightRequest="200" Margin="0,30,0,20"></Image>
                 <StackLayout Grid.Row="1" Padding="10,20">
                     <Entry x:Name="usuarioLogin" Placeholder="Usuario" PlaceholderColor="White"></Entry>
                     <Entry x:Name="passwordLogin" Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"></Entry>
@@ -44,7 +44,7 @@
                         <ImageButton Grid.Row="0" Source="iconogoogle.png" Clicked="ImageButton_Clicked" WidthRequest="40" HeightRequest="40" ></ImageButton>
                     </StackLayout>-->
 
-                    <Image Grid.Row="0" Source="israel2.png" WidthRequest="800" HeightRequest="100" Margin="0,30,0,20"></Image>
+                    <Image Grid.Row="0" Source="UNI.png" WidthRequest="800" HeightRequest="100" Margin="0,30,0,20"></Image>
                 </StackLayout>
             </Grid>
         </Grid>
