@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace MantenimientoUEBanos
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Mantenimientos : ContentPage
+    {
+       
+        public Mantenimientos()
+        {
+            InitializeComponent();
+        }
+
+        private void btnNuevomantenimiento_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cllmantenimiento_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+        }
+    }
+}

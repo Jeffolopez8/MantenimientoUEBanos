@@ -42,7 +42,7 @@ namespace MantenimientoUEBanos
 
 
                 await DisplayAlert("Bienvenido " + usuarioLogin.Text, "Se ha Iniciado sesión correctamente", "Ok");
-                await Navigation.PushAsync(new MenuPrincipal());
+                await Navigation.PushAsync(new OpcionesPP(codigo,nombre));
 
             }
 

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="MantenimientoUEBanos.PerfilUsuario"
+             xmlns:local1="clr-namespace:MantenimientoUEBanos.WS">
+
+    <ContentPage.BindingContext>
+
+        <local1:usuario/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Image Source="fondo11.jpg" Aspect="Fill"></Image>
+
+                <StackLayout>
+                  
+                    
+                    
+                <Frame BackgroundColor="Transparent"  Padding="0.5" CornerRadius="0" >
+                    <Image Source="LOGO.png" HeightRequest="100" WidthRequest="100"/>
+                </Frame>
+
+                <Label x:Name="lbl_principal" Text="PERFIL DEL USUARIO" FontSize="Medium" HorizontalOptions="Center"/>
+
+
+                <Grid>
+                </Grid>
+                <Frame BackgroundColor="Transparent">
+                    <StackLayout>
+                        <Entry x:Name="lbl_codigo" Placeholder="Ingrese su codigo" FontSize="Medium"     Keyboard="Numeric" Text="{Binding codigo}" TextColor="White"  IsVisible="false"></Entry>
+                            <Label Text="Nombre:"></Label>
+                            <Entry x:Name="lbl_nombre" Placeholder="Ingrese su nombre" FontSize="Medium"  Text="{Binding nombre}" TextColor="White"></Entry>
+                            <Label Text="Nick Usuario:"></Label>
+                            <Entry x:Name="lbl_ingersousuario" Placeholder="Ingrese su apellido" FontSize="Medium" Text="{Binding apellido}" TextColor="White" ></Entry>
+                            <Label Text="Correo:"></Label>
+                            <Entry x:Name="lbl_correo" Placeholder="Ingrese su domicilio" FontSize="Medium" TextColor="White" ></Entry>
+                            <Label Text="Telefono:"></Label>
+                            <Entry x:Name="lbl_telefono" Placeholder="Ingrese su telefono" FontSize="Medium"   Keyboard="Numeric" TextColor="White"></Entry>
+                            <Label Text="Contraseña:"></Label>
+                            <Entry x:Name="lbl_contrasena" Placeholder="Email" Text="{Binding Email}" FontSize="Medium" TextColor="White" ></Entry>
+                           
+                            
+
+                            <Button x:Name="btnCambioContrasena" IsVisible="false" Text="Cambiar Contraseña" Clicked="btnCambioContrasena_Clicked"></Button>
+                       
+                        <Entry x:Name="lbl_password" Placeholder="Ingrese su nueva  contraseña" IsVisible="false" FontSize="Medium" IsPassword="True" ></Entry>
+                        <Entry x:Name="lbl_password2" Placeholder="Ingrese nuevamente su nueva contraseña" IsVisible="false" FontSize="Medium" IsPassword="True" ></Entry>
+                        
+
+                        <Grid ColumnDefinitions="auto,*" >
+                        </Grid>
+
+                    </StackLayout>
+                </Frame>
+                <Button x:Name="btn_ActualizarUsuario" Text="ACTUALIZAR INFORMACION" 
+                    Clicked="btn_ActualizarUsuario_Clicked"   IsEnabled="True"
+                    FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+
+                <Button x:Name="btn_RegresarU" Text="REGRESAR MENU" 
+                    Clicked ="btn_RegresarU_Clicked"  IsEnabled="True" IsVisible="false"
+                     FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+            </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

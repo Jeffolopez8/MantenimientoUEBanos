@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MantenimientoUEBanos"
+            x:Class="MantenimientoUEBanos.Principal"
+             Title="Principal"
+              IconImageSource="pp.png"
+            NavigationPage.HasNavigationBar="False">
+              
+  
+    <ContentPage.Content>
+
+
+        <ScrollView>
+            <Grid >
+
+                <Image Source="fondo11.jpg" Aspect="Fill"></Image>
+            
+                <!-- <BoxView BackgroundColor="White" Opacity="0.6"></BoxView>-->
+
+                <Grid>
+
+                   
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+                    
+                    <Image Grid.Row="0" Source="LOGO.png" WidthRequest="100" HeightRequest="100" Margin="0,10,0,10"></Image>
+                    <StackLayout Grid.Row="1" Padding="10,20">
+                    <Image Grid.Row="0" Source="perfil.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>
+                    <Button x:Name="btnMiPrefil" Text="Mi perfil" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnMiPrefil_Clicked" ></Button>
+                        
+                    <Image Grid.Row="0" Source="equipos.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>
+                        <Button x:Name="btnPerfilequipos" Text="Equipos" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnPerfilequipos_Clicked" ></Button>
+
+
+                    </StackLayout>
+
+                   
+                       
+                    
+
+
+                </Grid>
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

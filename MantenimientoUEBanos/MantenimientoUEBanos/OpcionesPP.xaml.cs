@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace MantenimientoUEBanos
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class OpcionesPaginas : TabbedPage
+    public partial class OpcionesPP : TabbedPage
     {
-        public OpcionesPaginas()
+        public OpcionesPP(String codigo, string Nombre)
         {
             InitializeComponent();
+
+            string codigousu = codigo;
+            string nombreusu = Nombre;
+
+
         }
     }
 }

@@ -9,10 +9,10 @@
 
         <ScrollView>
             <Grid>
-                <Image Source="fon.jpg" Aspect="Fill"></Image>
+                <Image Source="fondo11.jpg" Aspect="Fill"></Image>
                 <StackLayout>
                     <Frame BackgroundColor="Transparent"  Padding="0.5" CornerRadius="0" >
-                        <Image Source="logo1.jpeg" HeightRequest="100" WidthRequest="100"/>
+                        <Image Source="LOGO.png" HeightRequest="100" WidthRequest="100"/>
                     </Frame>
 
                     <ProgressBar x:Name="progress" Progress=".0"/>

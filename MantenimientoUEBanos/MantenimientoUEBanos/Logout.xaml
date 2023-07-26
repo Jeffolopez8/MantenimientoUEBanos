@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MantenimientoUEBanos.Logout"
+              Title="Salir"
+              IconImageSource="cs.png"
+            NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Image Source="fondo11.jpg" Aspect="Fill"></Image>
+                <Grid>
+
+                    <Image Grid.Row="0" Source="LOGO.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>
+                    <StackLayout Grid.Row="1" Padding="10,20">
+
+                        <Button x:Name="btnCerrarcesion" Text="Cerrar Sesion" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnCerrarcesion_Clicked" ></Button>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
