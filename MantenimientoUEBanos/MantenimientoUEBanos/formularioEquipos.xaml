@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MantenimientoUEBanos.formularioEquipos">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Image Source="fondo11.jpg" Aspect="Fill"></Image>
+                <StackLayout>
+                    <Frame BackgroundColor="Transparent"  Padding="0.5" CornerRadius="0" >
+                        <Image Source="LOGO.png" HeightRequest="100" WidthRequest="100"/>
+                    </Frame>
+
+                    
+                    <Grid>
+                        <Label x:Name="lbl_principal1" Text="REGISTRO DE EQUIPO" FontSize="Medium" HorizontalOptions="Center"/>
+
+
+                    </Grid>
+                    <Frame BackgroundColor="Transparent">
+                        <StackLayout BackgroundColor="Transparent">
+
+                            <Entry x:Name="lbl_no_serie" Placeholder="Ingrese No. de serie" FontSize="Medium" Completed="lbl_no_serie_Completed" TextChanged="lbl_no_serie_TextChanged" BackgroundColor="Transparent"></Entry>
+                            <Entry x:Name="lbl_descripcion" Placeholder="Ingrese descripcion" FontSize="Medium" Completed="lbl_descripcion_Completed" TextChanged="lbl_descripcion_TextChanged"></Entry>
+                            <Entry x:Name="lbl_marca" Placeholder="Ingrese la marca" FontSize="Medium" Completed="lbl_marca_Completed" TextChanged="lbl_marca_TextChanged" ></Entry>
+                            <Grid ColumnDefinitions="auto,*" >
+                                <CheckBox x:Name="cbox_escritorio" IsChecked="False" CheckedChanged="cbox_escritorio_CheckedChanged" Grid.Column="0"></CheckBox>
+                                <Label Text="Ecritorio" Grid.Column="1" VerticalOptions="Center"></Label>
+                                
+                            </Grid>
+                            <Grid ColumnDefinitions="auto,*" >
+                                <CheckBox x:Name="cbox_laptop" IsChecked="False" CheckedChanged="cbox_laptop_CheckedChanged" Grid.Column="0"></CheckBox>
+                                <Label Text="Laptop" Grid.Column="1" VerticalOptions="Center"></Label>
+
+                            </Grid>
+                            <Entry x:Name="lbl_accesorios" Placeholder="Ingrese accesorios" FontSize="Medium"  Completed="lbl_accesorios_Completed" TextChanged="lbl_accesorios_TextChanged"></Entry>
+                            
+                            
+
+                        </StackLayout>
+                    </Frame>
+                    <Button x:Name="btn_registrar" Text="Registrar" 
+                    Clicked="btn_registrar_Clicked"  IsEnabled="True"
+                    FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

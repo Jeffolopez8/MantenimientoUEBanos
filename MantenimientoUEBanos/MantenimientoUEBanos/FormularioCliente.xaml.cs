@@ -53,7 +53,7 @@ namespace MantenimientoUEBanos
                         parametros.Add("telefono_Cliente", lbl_telefono.Text);
                         parametros.Add("contrasena_Cliente", lbl_password.Text);
 
-                        var response = cliente.UploadValues("http://200.12.169.100/uebanos/consultas/Cliente.php?", "POST", parametros);
+                        var response = cliente.UploadValues("http://200.12.169.100/uebanos/consultas/postbusqueda.php?", "POST", parametros);
 
 
 

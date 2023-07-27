@@ -71,9 +71,9 @@ namespace MantenimientoUEBanos
 
         }
 
-        private void btnregistrarequipo_Clicked(object sender, EventArgs e)
+        private async void btnregistrarequipo_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new formularioEquipos());
         }
     }
 }

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MantenimientoUEBanos.listadoEstadoMantenimientos">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Grid>
+
+                <Image Source="fondo11.jpg" Aspect="Fill" Margin="0,0,0,10"></Image>
+
+                <Grid>
+                    <StackLayout>
+
+                        <Frame BackgroundColor="Transparent"  Padding="0.5" CornerRadius="0" >
+                            <Image Source="LOGO.png" HeightRequest="100" WidthRequest="100"/>
+                        </Frame>
+
+                       
+                        <Label HorizontalTextAlignment="Center" Text="Lista Equipos" FontSize="Large" FontAttributes="Bold" Margin="0,30,0,0" ></Label>
+                        <Label HorizontalTextAlignment="Center" Text="________________________________" FontSize="Large" FontAttributes="Bold" Margin="0,-30,0,20"></Label>
+
+
+
+
+
+                        <ListView x:Name="cllestadoequipos" ItemsSource="{Binding _post}" SelectionMode="Single" ItemSelected="cllestadoequipos_ItemSelected" SeparatorColor="White">
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout HorizontalOptions="Center" VerticalOptions="Fill">
+                                            <Grid HeightRequest="300" WidthRequest="250">
+
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                    <RowDefinition Height="*"></RowDefinition>
+                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                </Grid.RowDefinitions>
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width=".3*"></ColumnDefinition>
+                                                    <ColumnDefinition Width=".7*"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Image Source="mantenimiento1.png" WidthRequest="200" Grid.RowSpan="2"></Image>
+                                                <Label Text="{Binding No_Caso_Reparacion}" Grid.Column="1" FontAttributes="Bold" FontSize="Title" VerticalOptions="CenterAndExpand" Margin="0,0,25,0" IsTabStop="True" IsEnabled="True"></Label>
+
+
+                                                <!--<TextCell Detail="{Binding nombre}"></TextCell>{-->
+
+                                            </Grid>
+                                        </StackLayout>
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+
+                            </ListView.ItemTemplate>
+
+
+
+
+
+                        </ListView>
+
+
+                    </StackLayout>
+
+                </Grid>
+
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

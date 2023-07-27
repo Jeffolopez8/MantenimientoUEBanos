@@ -14,11 +14,13 @@ namespace MantenimientoUEBanos.WS
 
         public string marca_Equipo { get; set; }
 
-        public int tipo_Equipoo { get; set; }
+        public int tipo_Equipo { get; set; }
 
         public string accesorios_Equipo { get; set; }
-        
-        
+
+        public string qrimagen_Equipos { get; set; }
+
+        public int Usuario_Cod_Usuario { get; set; }
 
     }
 }

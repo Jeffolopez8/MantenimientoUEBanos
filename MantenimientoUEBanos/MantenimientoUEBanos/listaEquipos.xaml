@@ -17,7 +17,7 @@
                         </Frame>
 
                         <Button x:Name="btnregistrarequipo" Text="Registrar Equipo" Clicked="btnregistrarequipo_Clicked" FontSize="Medium"  BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Padding="0" ></Button>
-                        <Label HorizontalTextAlignment="Center" Text="Mis Mascotas" FontSize="Large" FontAttributes="Bold" Margin="0,30,0,0" ></Label>
+                        <Label HorizontalTextAlignment="Center" Text="Equipos registrados" FontSize="Large" FontAttributes="Bold" Margin="0,30,0,0" ></Label>
                         <Label HorizontalTextAlignment="Center" Text="________________________________" FontSize="Large" FontAttributes="Bold" Margin="0,-30,0,20"></Label>
 
 

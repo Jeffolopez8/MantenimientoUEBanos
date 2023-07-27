@@ -29,5 +29,15 @@ namespace MantenimientoUEBanos
         {
 
         }
+
+        private async void btnenprocesoo_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new listadoEstadoMantenimientos(1));
+        }
+
+        private async void btnfinalizados_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new listadoEstadoMantenimientos(3));
+        }
     }
 }

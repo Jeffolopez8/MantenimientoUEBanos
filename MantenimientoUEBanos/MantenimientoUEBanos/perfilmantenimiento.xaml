@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MantenimientoUEBanos.perfilmantenimiento">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Image Source="fondo11.jpg" Aspect="Fill"></Image>
+
+                <StackLayout>
+
+
+
+                    <Frame BackgroundColor="Transparent"  Padding="0.5" CornerRadius="0" >
+                        <Image Source="LOGO.png" HeightRequest="100" WidthRequest="100"/>
+                    </Frame>
+
+                    <Label x:Name="lbl_mantenimientoperfil" Text="PERFIL DEL EQUIPO" FontSize="Medium" HorizontalOptions="Center"/>
+
+
+                    <Grid>
+                    </Grid>
+                    <Frame BackgroundColor="Transparent">
+                        <StackLayout>
+                            <Entry x:Name="lbl_Cod_reparacion" Placeholder="" FontSize="Medium"     Keyboard="Numeric" Text="{Binding No_Caso_Reparacion}" TextColor="White"  IsVisible="false"></Entry>
+                            <Entry x:Name="lbl_No_caso" Placeholder="Ingrese No de caso" FontSize="Medium"     Keyboard="Numeric" Text="{Binding No_Caso_Reparacion}" TextColor="White"  IsVisible="true"></Entry>
+                            <Label Text="No caso:"></Label>
+                            <Entry x:Name="lbl_descripcion" Placeholder="Descripcion del problema" FontSize="Medium"  Text="{Binding descripcion_problema_Reparacion}" TextColor="White"></Entry>
+                            <Label Text="Descripcion de problema:"></Label>
+                            <DatePicker x:Name="dtp_fechaingreso"></DatePicker>
+                            <Label Text="Fecha de ingreso:"></Label>
+                            <DatePicker x:Name="dtp_fechaentrega"></DatePicker>
+                            <Label Text="Fecha de entrega:"></Label>
+                            <Entry x:Name="lbl_estado" Placeholder="Estado" FontSize="Medium"   Keyboard="Numeric" Text="{Binding estado_Reparacion}" TextColor="White"></Entry>
+                            <Label Text="Estado de reparacion:"></Label>
+                            <Entry x:Name="lbl_primerreporte" Placeholder="primer reporte" Text="{Binding primerreporte_Reparacion}" FontSize="Medium" TextColor="White" ></Entry>
+                            <Label Text="Primer reporte:"></Label>
+                            <Entry x:Name="lbl_segundoreporte" Placeholder="segundo reporte" Text="{Binding segundoreporte_Reparacion}" FontSize="Medium" TextColor="White" ></Entry>
+                            <Label Text="Segundo reporte:"></Label>
+                            <Entry x:Name="lbl_componentes" Placeholder="componentes" Text="{Binding componentesreemplazados_Reparacion}" FontSize="Medium" TextColor="White" ></Entry>
+                            <Label Text="Componentes remplazados:"></Label>
+
+                          
+
+
+                        </StackLayout>
+                    </Frame>
+                    <Button x:Name="btn_ActualizarUsuario" Text="ACTUALIZAR INFORMACION" 
+                    Clicked="btn_ActualizarUsuario_Clicked"   IsEnabled="True"
+                    FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+
+                   
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
