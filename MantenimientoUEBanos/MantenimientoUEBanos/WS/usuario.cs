@@ -17,5 +17,7 @@ namespace MantenimientoUEBanos.WS
         public string telefono_Usuario { get; set; }
 
         public string contrasena_Usuario { get; set; }
+
+        public string tipo_Usuario { get; set; }
     }
 }

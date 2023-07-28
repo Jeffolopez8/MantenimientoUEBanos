@@ -17,7 +17,7 @@
                         </Frame>
 
                        
-                        <Label HorizontalTextAlignment="Center" Text="Lista Equipos" FontSize="Large" FontAttributes="Bold" Margin="0,30,0,0" ></Label>
+                        <Label x:Name="lblMantenimientotipo" HorizontalTextAlignment="Center" Text="Lista Equipos" FontSize="Large" FontAttributes="Bold" Margin="0,30,0,0" ></Label>
                         <Label HorizontalTextAlignment="Center" Text="________________________________" FontSize="Large" FontAttributes="Bold" Margin="0,-30,0,20"></Label>
 
 

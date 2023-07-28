@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MantenimientoUEBanos.QRequipos">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="fondo1.jpg" Aspect="Fill"></Image>
+
+            <StackLayout x:Name="stkQR">
+                <Frame BackgroundColor="Transparent"  Padding="0.5" CornerRadius="0" >
+                    <Image Source="logopatitasfelices.jpeg" HeightRequest="100" WidthRequest="100"/>
+                </Frame>
+
+
+
+
+                <Entry x:Name="txtValorQR" Placeholder="Introducir Mascota" IsVisible="false"></Entry>
+                <Label x:Name="lblNombreMascota" Text="" TextColor="Black" FontSize="Large"
+               HorizontalOptions="CenterAndExpand"></Label>
+
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

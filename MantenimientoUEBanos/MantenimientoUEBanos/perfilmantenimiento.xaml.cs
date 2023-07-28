@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace MantenimientoUEBanos
 {
@@ -95,6 +96,19 @@ namespace MantenimientoUEBanos
         private void btn_ActualizarUsuario_Clicked(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_finalizarproceso_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void btn_apprealidadaumentada_Clicked(object sender, EventArgs e)
+        {
+           // if (await Launcher.CanOpenAsync("uber://"))
+            //{
+                await Launcher.OpenAsync("augment://play.google.com/store/apps/details?id=com.ar.augment");
+            //}
         }
     }
 }

@@ -90,7 +90,7 @@
                                                 </Grid.ColumnDefinitions>
 
                                                 <Image Source="mantenimiento1.png" WidthRequest="200" Grid.RowSpan="2"></Image>
-                                                <Label Text="{Binding no_Serie_Equipo}" Grid.Column="1" FontAttributes="Bold" FontSize="Title" VerticalOptions="CenterAndExpand" Margin="0,0,25,0" IsTabStop="True" IsEnabled="True"></Label>
+                                                <Label Text="{Binding descripcion_Equipo}" Grid.Column="1" FontAttributes="Bold" FontSize="Title" VerticalOptions="CenterAndExpand" Margin="0,0,25,0" IsTabStop="True" IsEnabled="True"></Label>
 
 
                                                 <!--<TextCell Detail="{Binding nombre}"></TextCell>{-->

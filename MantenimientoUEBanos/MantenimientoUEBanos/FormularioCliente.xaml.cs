@@ -43,17 +43,17 @@ namespace MantenimientoUEBanos
                 {
                     try
                     {
-                        WebClient cliente = new WebClient();
+                        WebClient usuario = new WebClient();
                         var parametros = new System.Collections.Specialized.NameValueCollection();
 
-                        parametros.Add("Cod_Cliente", "");
-                        parametros.Add("nombre_Cliente", lbl_nombre.Text);
-                        parametros.Add("usuarioingreso_Cliente", lbl_usuario.Text);
-                        parametros.Add("correo_Cliente", lbl_correo.Text);
-                        parametros.Add("telefono_Cliente", lbl_telefono.Text);
-                        parametros.Add("contrasena_Cliente", lbl_password.Text);
-
-                        var response = cliente.UploadValues("http://200.12.169.100/uebanos/consultas/postbusqueda.php?", "POST", parametros);
+                        //parametros.Add("Cod_Cliente", "");
+                        parametros.Add("nombre_Usuario", lbl_nombre.Text);
+                        parametros.Add("usuarioingreso_Usuario", lbl_usuario.Text);
+                        parametros.Add("correo_Usuario", lbl_correo.Text);
+                        parametros.Add("telefono_Usuario", lbl_telefono.Text);
+                        parametros.Add("contrasena_Usuario", lbl_password.Text);
+                        parametros.Add("tipo_Usuario", "2");
+                        var response = usuario.UploadValues("http://200.12.169.100/uebanos/consultas/postbusqueda.php?", "POST", parametros);
 
 
 

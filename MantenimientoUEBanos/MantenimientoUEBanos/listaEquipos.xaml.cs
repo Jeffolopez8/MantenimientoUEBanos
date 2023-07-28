@@ -66,9 +66,32 @@ namespace MantenimientoUEBanos
 
         }
 
-        private void cllequipos_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void cllequipos_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            var obj = (WS.equipos)e.SelectedItem;
+            var item = obj.Cod_Equipo.ToString();
+            int codigoequipo = Convert.ToInt32(item);
+            var noserieequipo = obj.no_Serie_Equipo.ToString();
+            string noserie = noserieequipo.ToString();
+            var descripcionequipo = obj.descripcion_Equipo.ToString();
+            string descripcion = descripcionequipo.ToString();
 
+            var marcaequipo = obj.marca_Equipo.ToString();
+            string marca = marcaequipo.ToString();
+
+            var tipoequipo = obj.tipo_Equipo.ToString();
+            int tipo = Convert.ToInt32(tipoequipo);
+
+            var accesoriosequipo = obj.accesorios_Equipo.ToString();
+            string accesorios = accesoriosequipo.ToString();
+
+            var qrimagenequipo = obj.qrimagen_Equipos.ToString();
+            string qrimagen = qrimagenequipo.ToString();
+
+            
+
+
+            await Navigation.PushAsync(new perfilEquipo(codigoequipo, noserie, descripcion, marca, tipo, accesorios, qrimagen));
         }
 
         private async void btnregistrarequipo_Clicked(object sender, EventArgs e)

@@ -107,17 +107,19 @@ namespace MantenimientoUEBanos
                 parametros.Add("tipo_Equipo", Convert.ToString(tipo));
                 parametros.Add("accesorios_Equipo", lbl_accesorios.Text);
                 parametros.Add("qrimagen_Equipos","");
-                parametros.Add("Usuario_Cod_Usuario", "");
+               
                 
 
-                // var response = equipos.UploadValues("http://200.12.169.100/uebanos/consultas/Equipos.php?", "POST", parametros);
+                
 
-                equipos.UploadValues("http://200.12.169.100/uebanos/consultas/Equipos.php?","POST", parametros);
+                    equipos.UploadValues("http://200.12.169.100/uebanos/consultas/Equipos.php?","POST", parametros);
 
 
 
-                await DisplayAlert("Alerta", "Equipo Ingresado Correctamente", "Ok");
+                    await DisplayAlert("Alerta", "Equipo Ingresado Correctamente", "Ok");
 
+                btn_generaqrequipo.IsVisible = true;
+                btn_registrar.IsVisible = false;
 
                     }
                     catch (Exception ex)
@@ -142,6 +144,11 @@ namespace MantenimientoUEBanos
             cbox_escritorio.IsChecked = false;
             lbl_accesorios.Text = "";
             
+        }
+
+        private void btn_generaqrequipo_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 

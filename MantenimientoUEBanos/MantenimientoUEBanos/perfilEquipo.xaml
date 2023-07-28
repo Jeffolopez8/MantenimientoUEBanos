@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MantenimientoUEBanos.perfilEquipo">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Image Source="fondo11.jpg" Aspect="Fill"></Image>
+
+                <StackLayout>
+
+
+
+                    <Frame BackgroundColor="Transparent"  Padding="0.5" CornerRadius="0" >
+                        <Image Source="LOGO.png" HeightRequest="100" WidthRequest="100"/>
+                    </Frame>
+
+                    <Label x:Name="lbl_principal" Text="PERFIL DEL EQUIPO" FontSize="Medium" HorizontalOptions="Center"/>
+
+
+                    <Grid>
+                    </Grid>
+                    <Frame BackgroundColor="Transparent">
+                        <StackLayout>
+                            <Entry x:Name="lbl_Cod_Equipo" Placeholder="Ingrese su codigo" FontSize="Medium"     Keyboard="Numeric" Text="{Binding Cod_Equipo}" TextColor="White"  IsVisible="false"></Entry>
+                            <Label Text="No serie:"></Label>
+                            <Entry x:Name="lbl_no_Serie_Equipo" Placeholder="Ingrese No serie" FontSize="Medium"  Text="{Binding no_Serie_Equipo}" TextColor="White"></Entry>
+                            <Label Text="Descripcion:"></Label>
+                            <Entry x:Name="lbl_descripcion_Equipo" Placeholder="Descripcion" FontSize="Medium" Text="{Binding descripcion_Equipo}" TextColor="White" ></Entry>
+                            <Label Text="Marca:"></Label>
+                            <Entry x:Name="lbl_marca_Equipo" Placeholder="Marca" FontSize="Medium" Text="{Binding marca_Equipo}" TextColor="White" ></Entry>
+                            <Label Text="Tipo de equipo:"></Label>
+                            <Entry x:Name="lbl_tipo_Equipo" Placeholder="Tipo de equipo" FontSize="Medium" Text="{Binding tipo_Equipo}"  Keyboard="Numeric" TextColor="White"></Entry>
+                            <Label Text="Accesorios:"></Label>
+                            <Entry x:Name="lbl_accesorios_Equipo" Placeholder="Accesorios" Text="{Binding accesorios_Equipo}" FontSize="Medium" TextColor="White" ></Entry>
+                            <Entry x:Name="lbl_qrimagen_Equipos" Placeholder="qr" Text="{Binding qrimagen_Equipos}" FontSize="Medium" TextColor="White" IsVisible="false" ></Entry>
+
+
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Button x:Name="btn_generarqr" Text="GENERAR QR" 
+                    Clicked ="btn_generarqr_Clicked"  IsEnabled="True" IsVisible="true"
+                     FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+                    
+                    <Button x:Name="btn_Actualizarequipo" Text="ACTUALIZAR INFORMACION" 
+                    Clicked="btn_Actualizarequipo_Clicked"   IsEnabled="True"
+                    FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+
+                    <Button x:Name="btn_Eliminar" Text="ELIMINAR" 
+                    Clicked="btn_Eliminar_Clicked"   IsEnabled="True"
+                    FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+
+
+                    <Button x:Name="btn_RegresarU" Text="REGRESAR MENU" 
+                    Clicked ="btn_RegresarU_Clicked"  IsEnabled="True" IsVisible="false"
+                     FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

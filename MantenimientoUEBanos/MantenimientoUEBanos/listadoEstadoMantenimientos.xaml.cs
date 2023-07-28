@@ -23,10 +23,13 @@ namespace MantenimientoUEBanos
             InitializeComponent();
             if (estado==1)
             {
+                lblMantenimientotipo.Text = "Mantenimientos en Proceso";
                 listaequiposenproceso();
+
             }
             if (estado==3)
             {
+                lblMantenimientotipo.Text = "Mantenimientos Finalizados";
                 listaequiposfinalizados();
             }
         }

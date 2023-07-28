@@ -20,7 +20,7 @@ namespace MantenimientoUEBanos.WS
 
         public string qrimagen_Equipos { get; set; }
 
-        public int Usuario_Cod_Usuario { get; set; }
+        
 
     }
 }

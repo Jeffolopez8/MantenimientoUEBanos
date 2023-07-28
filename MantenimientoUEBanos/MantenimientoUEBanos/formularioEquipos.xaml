@@ -19,10 +19,13 @@
                     </Grid>
                     <Frame BackgroundColor="Transparent">
                         <StackLayout BackgroundColor="Transparent">
-
+                            <Label Text="No serie:"  VerticalOptions="Center"></Label>
                             <Entry x:Name="lbl_no_serie" Placeholder="Ingrese No. de serie" FontSize="Medium" Completed="lbl_no_serie_Completed" TextChanged="lbl_no_serie_TextChanged" BackgroundColor="Transparent"></Entry>
+                            <Label Text="Descripcion:" VerticalOptions="Center"></Label>
                             <Entry x:Name="lbl_descripcion" Placeholder="Ingrese descripcion" FontSize="Medium" Completed="lbl_descripcion_Completed" TextChanged="lbl_descripcion_TextChanged"></Entry>
+                            <Label Text="Marca:"  VerticalOptions="Center"></Label>
                             <Entry x:Name="lbl_marca" Placeholder="Ingrese la marca" FontSize="Medium" Completed="lbl_marca_Completed" TextChanged="lbl_marca_TextChanged" ></Entry>
+                            <Label Text="Tipo de equipo:"  VerticalOptions="Center"></Label>
                             <Grid ColumnDefinitions="auto,*" >
                                 <CheckBox x:Name="cbox_escritorio" IsChecked="False" CheckedChanged="cbox_escritorio_CheckedChanged" Grid.Column="0"></CheckBox>
                                 <Label Text="Ecritorio" Grid.Column="1" VerticalOptions="Center"></Label>
@@ -33,6 +36,7 @@
                                 <Label Text="Laptop" Grid.Column="1" VerticalOptions="Center"></Label>
 
                             </Grid>
+                            <Label Text="Accesorios:"  VerticalOptions="Center"></Label>
                             <Entry x:Name="lbl_accesorios" Placeholder="Ingrese accesorios" FontSize="Medium"  Completed="lbl_accesorios_Completed" TextChanged="lbl_accesorios_TextChanged"></Entry>
                             
                             
@@ -41,6 +45,9 @@
                     </Frame>
                     <Button x:Name="btn_registrar" Text="Registrar" 
                     Clicked="btn_registrar_Clicked"  IsEnabled="True"
+                    FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+                    <Button x:Name="btn_generaqrequipo" Text="Registrar" 
+                    Clicked="btn_generaqrequipo_Clicked"  IsEnabled="True" IsVisible="false"
                     FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
                 </StackLayout>
             </Grid>
