@@ -20,9 +20,9 @@ namespace MantenimientoUEBanos
             InitializeComponent();
         }
 
-        private void btnNuevomantenimiento_Clicked(object sender, EventArgs e)
+        private  void btnNuevomantenimiento_Clicked(object sender, EventArgs e)
         {
-
+            
         }
 
         private void cllmantenimiento_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -38,6 +38,11 @@ namespace MantenimientoUEBanos
         private async void btnfinalizados_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new listadoEstadoMantenimientos(3));
+        }
+
+        private async void btnnuevomantenimiento_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new formularioreparaciones());
         }
     }
 }

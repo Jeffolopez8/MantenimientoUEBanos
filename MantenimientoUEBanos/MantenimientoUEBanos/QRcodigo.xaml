@@ -7,9 +7,38 @@
             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView>
-            <Grid>
+            <Grid >
+
                 <Image Source="fondo11.jpg" Aspect="Fill"></Image>
-                
+
+                <!-- <BoxView BackgroundColor="White" Opacity="0.6"></BoxView>-->
+
+                <Grid>
+
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+
+                    <Image Grid.Row="0" Source="LOGO.png" WidthRequest="100" HeightRequest="100" Margin="0,10,0,10"></Image>
+                    <StackLayout Grid.Row="1" Padding="10,20">
+                        <Image Grid.Row="0" Source="qr2.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>
+                        <Label Text="Consulte la Información del equipo, dando click en el botón. (El código QR, se encuentra en la parte de atrás de la placa informativa del eqipo, o puede obtenerlo en la información del equipo)" TextColor="CadetBlue" BackgroundColor="Azure" FontSize="Small" FontAttributes="Bold"></Label>
+                        <Button x:Name="btnConsultarQr" Text="Consultar Código QR" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnConsultarQr_Clicked_1" ></Button>
+
+                    </StackLayout>
+
+
+
+
+
+
+
+                </Grid>
             </Grid>
         </ScrollView>
     </ContentPage.Content>

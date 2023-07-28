@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -17,13 +18,22 @@ namespace MantenimientoUEBanos
     {
         private readonly HttpClient client = new HttpClient();
         private ObservableCollection<MantenimientoUEBanos.WS.reparacionesporequipo> _post;
-        public perfilmantenimiento(int codigoreparacion)
+        public perfilmantenimiento(int codigoreparacion,string nocaso, string descripcion,int estadorep,string primerreporte, string segundoreporte, string componentes)
         {
             InitializeComponent();
            // lbl_No_caso.Text = codigoUsuario;
             MantenimientoUEBanos.WS.reparacionesporequipo usuario = new MantenimientoUEBanos.WS.reparacionesporequipo();
             lbl_Cod_reparacion.Text = Convert.ToString(codigoreparacion);
-            llamadatosmantenimiento();
+            lbl_No_caso.Text = nocaso;
+            lbl_descripcion.Text = descripcion;
+           // dtp_fechaingreso.Date = Convert.ToDateTime( fechaing);
+            //dtp_fechaentrega.Date = Convert.ToDateTime(fechaent);
+            lbl_estado.Text = Convert.ToString(estadorep);
+            lbl_primerreporte.Text = primerreporte;
+            lbl_segundoreporte.Text = segundoreporte;
+            lbl_componentes.Text = componentes;
+
+            
         }
 
         public async void llamadatosmantenimiento()

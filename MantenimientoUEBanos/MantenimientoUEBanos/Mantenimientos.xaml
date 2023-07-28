@@ -22,6 +22,7 @@
                        
                         <Label HorizontalTextAlignment="Center" Text="Mantenimientos" FontSize="Large" FontAttributes="Bold" Margin="0,30,0,0" ></Label>
                         <Label HorizontalTextAlignment="Center" Text="________________________________" FontSize="Large" FontAttributes="Bold" Margin="0,-30,0,20"></Label>
+                        <Button x:Name="btnnuevomantenimiento" Text="Nuevo mantenimiento" Clicked="btnnuevomantenimiento_Clicked_1" FontSize="Medium"  BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Padding="0" ></Button>
                         <Image Grid.Row="0" Source="progreso2.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>
                         <Button x:Name="btnenprocesoo" Text="En Proceso" Clicked="btnenprocesoo_Clicked" FontSize="Medium"  BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Padding="0" ></Button>
                         <Image Grid.Row="0" Source="finalizando2.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>

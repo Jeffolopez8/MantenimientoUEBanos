@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MantenimientoUEBanos.formularioreparaciones">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Image Source="fondo11.jpg" Aspect="Fill"></Image>
+                <StackLayout>
+                    <Frame BackgroundColor="Transparent"  Padding="0.5" CornerRadius="0" >
+                        <Image Source="LOGO.png" HeightRequest="100" WidthRequest="100"/>
+                    </Frame>
+
+
+                    <Grid>
+                        <Label x:Name="lbl_principal1" Text="NUEVO MANTENIMIENTO" FontSize="Medium" HorizontalOptions="Center"/>
+
+
+                    </Grid>
+                    <Frame BackgroundColor="Transparent">
+                        <StackLayout BackgroundColor="Transparent">
+                            
+                            <Entry x:Name="lbl_Cod_Reparaciones" Placeholder="" FontSize="Medium" Completed="lbl_Cod_Reparaciones_Completed" TextChanged="lbl_Cod_Reparaciones_TextChanged" IsVisible="false" BackgroundColor="Transparent"></Entry>
+                            <Label Text="No Caso:"></Label>
+                            <Entry x:Name="lbl_No_Caso_Reparacion" Placeholder="Ingrese No. de Caso" FontSize="Medium" Completed="lbl_No_Caso_Reparacion_Completed" TextChanged="lbl_No_Caso_Reparacion_TextChanged"></Entry>
+                            <Label Text="Descripcion del problema:"></Label>
+                            <Entry x:Name="lbl_descripcion_problema_Reparacion" Placeholder="Descripcion" FontSize="Medium" Completed="lbl_descripcion_problema_Reparacion_Completed" TextChanged="lbl_descripcion_problema_Reparacion_TextChanged" ></Entry>
+                            
+                            <Label Text="Primer reporte:"></Label>
+                            <Entry x:Name="lbl_primerreporte_Reparacion" Placeholder="Primer reporte" FontSize="Medium" Completed="primerreporte_Reparacion_Completed" TextChanged="primerreporte_Reparacion_TextChanged" ></Entry>
+                            <Label Text="Segundo reporte:"></Label>
+                            <Entry x:Name="lbl_segundoreporte_Reparacion" Placeholder="Segundo reporte" FontSize="Medium" Completed="segundoreporte_Reparacion_Completed" TextChanged="segundoreporte_Reparacion_TextChanged" ></Entry>
+                            <Label Text="Componentes:"></Label>
+                            <Entry x:Name="lbl_componentesreemplazados_Reparacion" Placeholder="Componentes " FontSize="Medium" Completed="componentesreemplazados_Reparacion_Completed" TextChanged="componentesreemplazados_Reparacion_TextChanged" ></Entry>
+                           
+
+                        </StackLayout>
+                    </Frame>
+                    <Button x:Name="btn_registrar" Text="Registrar" 
+                    Clicked="btn_registrar_Clicked"  IsEnabled="True"
+                    FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

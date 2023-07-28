@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MantenimientoUEBanos.WS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,9 +18,9 @@ namespace MantenimientoUEBanos
             InitializeComponent();
         }
 
-        private void btnCerrarcesion_Clicked(object sender, EventArgs e)
+        private async void btnCerrarcesion_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new LoginMantenimiento());
         }
     }
 }

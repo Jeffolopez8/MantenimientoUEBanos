@@ -12,10 +12,6 @@ namespace MantenimientoUEBanos.WS
 
         public string descripcion_problema_Reparacion { get; set; }
 
-        public string fecha_ingreso_Reparacion { get; set; }
-
-        public string fecha_entrega_Reparacion { get; set; }
-
         public int estado_Reparacion { get; set; }
 
         public string primerreporte_Reparacion { get; set; }
@@ -24,6 +20,11 @@ namespace MantenimientoUEBanos.WS
 
         public string componentesreemplazados_Reparacion { get; set; }
 
-       
+        public string Usuario_Cod_Usuario { get; set; }
+
+        public string Equipos_Cod_Equipo { get; set; }
+
+        public string Equipos_Usuario_Cod_Usuario { get; set; }
+
     }
 }
