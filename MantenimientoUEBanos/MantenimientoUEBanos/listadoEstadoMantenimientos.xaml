@@ -30,7 +30,7 @@
                                 <DataTemplate>
                                     <ViewCell>
                                         <StackLayout HorizontalOptions="Center" VerticalOptions="Fill">
-                                            <Grid HeightRequest="300" WidthRequest="250">
+                                            <Grid HeightRequest="300" WidthRequest="500">
 
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition Height="Auto"></RowDefinition>

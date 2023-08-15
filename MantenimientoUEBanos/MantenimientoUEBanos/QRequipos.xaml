@@ -4,11 +4,11 @@
              x:Class="MantenimientoUEBanos.QRequipos">
     <ContentPage.Content>
         <Grid>
-            <Image Source="fondo1.jpg" Aspect="Fill"></Image>
+            <Image Source="fondo11.jpg" Aspect="Fill"></Image>
 
             <StackLayout x:Name="stkQR">
                 <Frame BackgroundColor="Transparent"  Padding="0.5" CornerRadius="0" >
-                    <Image Source="logopatitasfelices.jpeg" HeightRequest="100" WidthRequest="100"/>
+                    <Image Source="LOGO.jpeg" HeightRequest="100" WidthRequest="100"/>
                 </Frame>
 
 

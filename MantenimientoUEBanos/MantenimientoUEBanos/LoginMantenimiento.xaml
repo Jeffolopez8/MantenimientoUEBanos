@@ -27,8 +27,8 @@
 
                     <StackLayout Orientation="Horizontal" >
 
-                        <Button x:Name="BtnRecuperarContrasena" Text="¿Olvidó su contraseña?" Clicked="BtnRecuperarContrasena_Clicked" BackgroundColor="Transparent" TextColor="White" Padding="0,0,0,0"></Button>
-                        <!-- <Label Text="¿Recuperar Contraseña?" FontAttributes="Bold" />
+                        <!--<Button x:Name="BtnRecuperarContrasena" Text="¿Olvidó su contraseña?" Clicked="BtnRecuperarContrasena_Clicked" BackgroundColor="Transparent" TextColor="White" Padding="0,0,0,0"></Button>
+                        <Label Text="¿Recuperar Contraseña?" FontAttributes="Bold" />
                         <Label Text="Registrarse" HorizontalOptions="EndAndExpand" FontAttributes="Bold" x:Name="lblregistroApp">
                             
                         </Label>-->

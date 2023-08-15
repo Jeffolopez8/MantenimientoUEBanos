@@ -103,12 +103,9 @@ namespace MantenimientoUEBanos
 
         }
 
-        private async void btn_apprealidadaumentada_Clicked(object sender, EventArgs e)
+        private void btn_apprealidadaumentada_Clicked(object sender, EventArgs e)
         {
-           // if (await Launcher.CanOpenAsync("uber://"))
-            //{
-                await Launcher.OpenAsync("augment://play.google.com/store/apps/details?id=com.ar.augment");
-            //}
+            Browser.OpenAsync("https://play.google.com/store/apps/details?id=com.ar.augment",BrowserLaunchMode.SystemPreferred);
         }
     }
 }
