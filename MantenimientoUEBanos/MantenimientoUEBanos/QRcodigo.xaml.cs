@@ -45,13 +45,13 @@ namespace MantenimientoUEBanos
                     string word2 = "*";
                     string text = stringBetween(resultado, word1, word2);
 
-                    string codigoanimal = text;
+                    string codigoequipo = text;
 
-                    int codigoverificado = Convert.ToInt32(codigoanimal);
+                    int codigoverificado = Convert.ToInt32(codigoequipo);
 
                     if (codigoverificado > 0)
                     {
-                        string Url2 = "http://200.12.169.100/patitas/mascota/postbusqueda.php?codigo=" + codigoanimal;
+                        string Url2 = "http://200.12.169.100/uebanos/consultas/buscamantenimientoporequipo.php?codigo=" + codigoequipo;
 
                         HttpResponseMessage response = await client.GetAsync($"{Url2}");
 
@@ -68,13 +68,13 @@ namespace MantenimientoUEBanos
 
                             if (content.Count() > 0)
                             {
-                                //await Navigation.PushAsync(new ListadoMascotasporQR(codigoanimal));
+                                await Navigation.PushAsync(new MantenimientoQR(codigoverificado));
 
                             }
 
                             else
                             {
-                                await DisplayAlert("Alerta", "El código no pertenece a Patitas Felices", "Ok");
+                                await DisplayAlert("Alerta", "El código no pertenece al equipo", "Ok");
 
                             }
 
@@ -82,7 +82,7 @@ namespace MantenimientoUEBanos
 
                         else
                         {
-                            await DisplayAlert("Alerta", "El código no pertenece a Patitas Felices", "Ok");
+                            await DisplayAlert("Alerta", "El código no pertenece al equipo", "Ok");
 
                         }
 
@@ -97,7 +97,7 @@ namespace MantenimientoUEBanos
             catch (Exception)
             {
 
-                await DisplayAlert("Error", "El Codigo QR no pertenece a Patitas Felices App", "OK");
+                await DisplayAlert("Error", "El Codigo QR no pertenece al equipo ", "OK");
             }
         }
 

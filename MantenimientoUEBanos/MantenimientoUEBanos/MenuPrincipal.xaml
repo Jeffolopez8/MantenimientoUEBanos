@@ -29,12 +29,12 @@
                     
                     
                     <StackLayout Grid.Row="1" Padding="10,20">
-                        <!--<Image Grid.Row="0" Source="perroyamo.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>-->
+                      
                         <Button x:Name="btnUsuarios" IsVisible="false" Text="Usuarios" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnUsuarios_Clicked" ></Button>
 
                         <Button x:Name="btnPerfil" Text="Mi Perfil" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnPerfil_Clicked" ></Button>
 
-                        <!--<Image Grid.Row="0" Source="perfilusuario1.jpg" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>-->
+                    
                         <Button x:Name="btnEquipos" Text="Mis Equipos" FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Clicked="btnEquipos_Clicked" ></Button>
     
 

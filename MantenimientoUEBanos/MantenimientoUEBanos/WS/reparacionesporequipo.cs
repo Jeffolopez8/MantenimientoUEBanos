@@ -20,11 +20,10 @@ namespace MantenimientoUEBanos.WS
 
         public string componentesreemplazados_Reparacion { get; set; }
 
-        public string Usuario_Cod_Usuario { get; set; }
 
-        public string Equipos_Cod_Equipo { get; set; }
+        public int Cod_Equipo { get; set; }
 
-        public string Equipos_Usuario_Cod_Usuario { get; set; }
+       
 
     }
 }

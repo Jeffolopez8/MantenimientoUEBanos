@@ -23,6 +23,8 @@
                     <Frame BackgroundColor="Transparent">
                         <StackLayout>
                             <Entry x:Name="lbl_Cod_reparacion" Placeholder="" FontSize="Medium"     Keyboard="Numeric" Text="{Binding No_Caso_Reparacion}" TextColor="White"  IsVisible="false"></Entry>
+
+                            
                             <Label Text="No caso:"></Label>
                             <Entry x:Name="lbl_No_caso" Placeholder="Ingrese No de caso" FontSize="Medium"     Keyboard="Numeric" Text="{Binding No_Caso_Reparacion}" TextColor="White"  IsVisible="true"></Entry>
                             <Label Text="Descripcion de problema:"></Label>

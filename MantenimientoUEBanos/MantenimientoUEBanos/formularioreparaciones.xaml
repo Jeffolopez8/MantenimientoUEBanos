@@ -19,7 +19,13 @@
                     </Grid>
                     <Frame BackgroundColor="Transparent">
                         <StackLayout BackgroundColor="Transparent">
-                            
+
+                            <Label Text="Seleccionar equipo"></Label>
+                            <Button x:Name="btn_seleccionaequipo" Text="Buscar equipo" 
+                            Clicked="btn_seleccionaequipo_Clicked"   IsEnabled="True"
+                            FontSize="Small" Padding="0" BackgroundColor="Wheat" BorderWidth="10" TextColor="CadetBlue" CornerRadius="60"></Button>
+                            <Entry x:Name="lbl_Cod_equipo"  FontSize="Medium"   TextColor="White"  IsVisible="false"></Entry>
+
                             <Entry x:Name="lbl_Cod_Reparaciones" Placeholder="" FontSize="Medium" Completed="lbl_Cod_Reparaciones_Completed" TextChanged="lbl_Cod_Reparaciones_TextChanged" IsVisible="false" BackgroundColor="Transparent"></Entry>
                             <Label Text="No Caso:"></Label>
                             <Entry x:Name="lbl_No_Caso_Reparacion" Placeholder="Ingrese No. de Caso" FontSize="Medium" Completed="lbl_No_Caso_Reparacion_Completed" TextChanged="lbl_No_Caso_Reparacion_TextChanged"></Entry>
@@ -37,7 +43,7 @@
                         </StackLayout>
                     </Frame>
                     <Button x:Name="btn_registrar" Text="Registrar" 
-                    Clicked="btn_registrar_Clicked"  IsEnabled="True"
+                    Clicked="btn_registrar_Clicked"  IsEnabled="False"
                     FontSize="Large" Padding="0" BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60"></Button>
                 </StackLayout>
             </Grid>

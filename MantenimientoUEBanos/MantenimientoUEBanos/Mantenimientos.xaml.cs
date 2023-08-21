@@ -32,12 +32,12 @@ namespace MantenimientoUEBanos
 
         private async void btnenprocesoo_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new listadoEstadoMantenimientos(1));
+            await Navigation.PushAsync(new listadoEstadoMantenimientos(1,0));
         }
 
         private async void btnfinalizados_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new listadoEstadoMantenimientos(3));
+            await Navigation.PushAsync(new listadoEstadoMantenimientos(3,0));
         }
 
         private async void btnnuevomantenimiento_Clicked_1(object sender, EventArgs e)

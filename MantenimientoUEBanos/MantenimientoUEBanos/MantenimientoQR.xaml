@@ -1,10 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MantenimientoUEBanos.Mantenimientos"
-              Title="Mantenimientos"
-              IconImageSource="mantenimiento3.png"
-            NavigationPage.HasNavigationBar="False">
+             x:Class="MantenimientoUEBanos.MantenimientoQR">
     <ContentPage.Content>
         <ScrollView>
 
@@ -19,10 +16,10 @@
                             <Image Source="LOGO.png" HeightRequest="100" WidthRequest="100"/>
                         </Frame>
 
-                       
+
                         <Label HorizontalTextAlignment="Center" Text="Mantenimientos" FontSize="Large" FontAttributes="Bold" Margin="0,30,0,0" ></Label>
                         <Label HorizontalTextAlignment="Center" Text="________________________________" FontSize="Large" FontAttributes="Bold" Margin="0,-30,0,20"></Label>
-                        <Button x:Name="btnnuevomantenimiento" Text="Nuevo mantenimiento" Clicked="btnnuevomantenimiento_Clicked_1" FontSize="Medium"  BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Padding="0" ></Button>
+                       
                         <Image Grid.Row="0" Source="progreso2.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>
                         <Button x:Name="btnenprocesoo" Text="En Proceso" Clicked="btnenprocesoo_Clicked" FontSize="Medium"  BackgroundColor="Wheat" BorderWidth="20" TextColor="CadetBlue" CornerRadius="60" Padding="0" ></Button>
                         <Image Grid.Row="0" Source="finalizando2.png" WidthRequest="200" HeightRequest="150" Margin="0,30,0,20"></Image>
@@ -31,7 +28,7 @@
 
 
 
-                       
+
 
 
 
